@@ -2,17 +2,14 @@
 
 import numpy as np
 
-# This is your team name
-CREATOR = "BarebonesAI"
-
 
 class PlayerAi:
     """
     This is the AI bot that will be instantiated for the competition.
     """
 
-    def __init__(self):
-        self.team = CREATOR  # Mandatory attribute
+    def __init__(self, name):
+        self.team = name
         self.ntanks = {}
         self.nships = {}
 

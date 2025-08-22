@@ -4,9 +4,6 @@ import numpy as np
 
 from supremacy import helpers
 
-# This is your team name
-CREATOR = "SimpleAI"
-
 
 def tank_ai(tank, info, game_map):
     """
@@ -44,8 +41,8 @@ class PlayerAi:
     This is the AI bot that will be instantiated for the competition.
     """
 
-    def __init__(self):
-        self.team = CREATOR  # Mandatory attribute
+    def __init__(self, name):
+        self.team = name
         self.build_queue = helpers.BuildQueue(
             ["mine", "tank", "ship", "jet"], cycle=True
         )
